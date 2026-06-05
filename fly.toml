@@ -1,10 +1,22 @@
-app = "caddie-platform"
+# fly.toml app configuration file generated for tactical-gamerzguide on 2026-06-05T21:05:55Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-primary_region = "sjc"
+app = 'tactical-gamerzguide'
+primary_region = 'sjc'
+
+[build]
 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 1
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 256
