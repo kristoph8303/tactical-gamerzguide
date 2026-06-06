@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for tactical-gamerzguide on 2026-06-05T21:05:55Z
+# fly.toml app configuration file generated for tactical-gamerzguide-bimc0g on 2026-06-06T09:31:26Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'tactical-gamerzguide'
-primary_region = 'sjc'
+app = 'tactical-gamerzguide-bimc0g'
+primary_region = 'lax'
 
 [build]
 
